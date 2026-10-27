@@ -133,6 +133,7 @@ export default function SettingsPage() {
           <h2 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">About</h2>
           <div className="card text-sm text-slate-400 space-y-2">
             <div className="flex justify-between"><span>Application</span><span className="text-white">SiteMedic AI</span></div>
+            <div className="flex justify-between"><span>Creator</span><span className="text-cyan-300 font-medium">Adarsh Panicker</span></div>
             <div className="flex justify-between"><span>Track</span><span className="text-white">Nebius × NVIDIA Hackathon — Best Apps & Agents</span></div>
             <div className="flex justify-between"><span>AI Provider</span><span className="text-white">Nebius Token Factory</span></div>
             <div className="flex justify-between"><span>AI Model</span><span className="text-white">NVIDIA Nemotron</span></div>

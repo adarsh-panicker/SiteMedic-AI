@@ -318,7 +318,13 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Logo size="sm" showText={false} />
-            <span className="text-sm text-slate-500">SiteMedic AI — Nebius × NVIDIA Hackathon</span>
+            <div className="text-sm">
+              <span className="font-semibold text-white">SiteMedic AI</span>
+              <span className="text-slate-600 mx-2">·</span>
+              <span className="text-cyan-400 font-medium">By Adarsh Panicker</span>
+              <span className="text-slate-600 mx-2">·</span>
+              <span className="text-slate-500">Nebius × NVIDIA Hackathon</span>
+            </div>
           </div>
           <div className="flex items-center gap-4 text-sm text-slate-600">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">GitHub</a>

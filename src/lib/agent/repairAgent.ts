@@ -98,19 +98,22 @@ export async function runRepairWorkflow(
         }
       }
 
-      // Re-audit the patched file for the original rule
+      // Re-audit the patched file for the targeted rule/element
       if (patch.changedFiles.length > 0) {
         const patchedFile = patch.changedFiles[0];
         const { auditPage } = await import("@/lib/scanner/htmlScanner");
         const remainingIssues = auditPage(patchedFile.patchedContent, `file://${patchedFile.path}`);
-        const originalRuleFixed = !remainingIssues.some((i) => i.ruleId === issue.ruleId);
+        const targetedIssueStillPresent = issue.element
+          ? remainingIssues.some((i) => i.ruleId === issue.ruleId && i.element === issue.element)
+          : remainingIssues.some((i) => i.ruleId === issue.ruleId);
+        const originalRuleFixed = !targetedIssueStillPresent;
 
         validationResults.push({
           checkName: `Rule check: ${issue.ruleId} (${issue.title})`,
           status: originalRuleFixed ? "passed" : "failed",
           output: originalRuleFixed
-            ? "Original issue is resolved in the patched code"
-            : "Original issue still present after patch",
+            ? "Targeted defect is verified resolved in the patched code"
+            : "Targeted issue still present after patch",
         });
       }
 

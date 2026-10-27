@@ -34,7 +34,7 @@ export default function Navigation() {
       <aside className="hidden lg:flex flex-col w-56 shrink-0 border-r border-[#1e293b] bg-[#060b18] h-screen sticky top-0">
         {/* Logo */}
         <div className="flex items-center px-4 py-4 border-b border-[#1e293b]">
-          <Link href="/dashboard" className="transition-opacity hover:opacity-90">
+          <Link href="/" className="transition-opacity hover:opacity-90">
             <Logo size="md" />
           </Link>
         </div>
@@ -58,16 +58,17 @@ export default function Navigation() {
 
         {/* Footer */}
         <div className="p-3 border-t border-[#1e293b]">
-          <div className="text-[11px] text-slate-600 px-2">
-            <div className="font-medium text-slate-500">SiteMedic AI</div>
-            <div>Nebius × NVIDIA Hackathon</div>
+          <div className="text-[11px] px-2 space-y-0.5">
+            <div className="font-semibold text-white">SiteMedic AI</div>
+            <div className="text-cyan-400 font-medium">By Adarsh Panicker</div>
+            <div className="text-[10px] text-slate-500">Nebius × NVIDIA Hackathon</div>
           </div>
         </div>
       </aside>
 
       {/* Mobile header */}
       <header className="lg:hidden flex items-center justify-between px-4 py-3 border-b border-[#1e293b] bg-[#060b18] sticky top-0 z-50">
-        <Link href="/dashboard">
+        <Link href="/">
           <Logo size="sm" />
         </Link>
         <button

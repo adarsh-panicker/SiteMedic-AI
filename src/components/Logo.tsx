@@ -4,10 +4,16 @@ import Image from "next/image";
 interface LogoProps {
   size?: "sm" | "md" | "lg" | "xl";
   showText?: boolean;
+  subtitle?: string;
   className?: string;
 }
 
-export default function Logo({ size = "md", showText = true, className = "" }: LogoProps) {
+export default function Logo({
+  size = "md",
+  showText = true,
+  subtitle = "By Adarsh Panicker",
+  className = "",
+}: LogoProps) {
   const iconSizes = {
     sm: 24,
     md: 32,
@@ -122,9 +128,9 @@ export default function Logo({ size = "md", showText = true, className = "" }: L
               AI
             </span>
           </div>
-          {size !== "sm" && (
-            <span className="text-[10px] text-slate-400 font-medium tracking-wide mt-0.5">
-              Autonomous Web Doctor
+          {showText && (
+            <span className="text-[10px] text-cyan-400/90 font-medium tracking-wide mt-0.5">
+              {subtitle}
             </span>
           )}
         </div>

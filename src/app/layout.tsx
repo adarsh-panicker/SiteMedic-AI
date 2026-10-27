@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   description:
     "Find website problems. Fix them with AI. Scan your website, investigate real issues, generate intelligent repairs, and verify your fixes before applying them.",
   keywords: ["website audit", "AI repair", "accessibility", "SEO", "broken links", "code quality"],
-  authors: [{ name: "SiteMedic AI" }],
+  authors: [{ name: "Adarsh Panicker" }],
+  creator: "Adarsh Panicker",
   openGraph: {
     title: "SiteMedic AI",
     description: "Find Website Problems. Fix Them with AI.",
