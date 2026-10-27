@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" fill="none">
+  <rect width="1200" height="800" fill="#060b18"/>
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neonCross" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <circle cx="600" cy="320" r="380" fill="url(#bgGlow)"/>
+  
+  <!-- Emblem Center Box -->
+  <rect x="480" y="200" width="240" height="240" rx="56" fill="#0a1628" stroke="#22d3ee" stroke-width="4" stroke-opacity="0.6"/>
+  <!-- Left Code Bracket -->
+  <path d="M430 280 L370 320 L430 360" stroke="#22d3ee" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right Code Bracket -->
+  <path d="M770 280 L830 320 L770 360" stroke="#22d3ee" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cross -->
+  <rect x="520" y="305" width="160" height="30" rx="15" fill="url(#neonCross)"/>
+  <rect x="585" y="240" width="30" height="160" rx="15" fill="url(#neonCross)"/>
+  <!-- Pulse Core -->
+  <circle cx="600" cy="320" r="18" fill="#ffffff"/>
+  <circle cx="600" cy="320" r="32" stroke="#67e8f9" stroke-width="3" stroke-dasharray="6 6"/>
+  
+  <!-- Typography -->
+  <text x="600" y="530" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="68" fill="#ffffff" letter-spacing="-1">SiteMedic <tspan fill="#22d3ee">AI</tspan></text>
+  <text x="600" y="590" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="500" font-size="26" fill="#94a3b8" letter-spacing="0.5">Autonomous Website Audit &amp; Repair Agent</text>
+  
+  <!-- Tagline badge -->
+  <rect x="380" y="640" width="440" height="46" rx="23" fill="#0f2042" stroke="#254a80" stroke-width="1.5"/>
+  <text x="600" y="670" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="16" fill="#22d3ee" letter-spacing="1">POWERED BY NVIDIA NEMOTRON × NEBIUS</text>
+</svg>

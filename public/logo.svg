@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" fill="none">
+  <!-- Background Container -->
+  <rect width="256" height="256" rx="56" fill="#060b18"/>
+  <rect x="2" y="2" width="252" height="252" rx="54" stroke="url(#borderGrad)" stroke-width="3" opacity="0.6"/>
+
+  <!-- Radial Glow Behind Icon -->
+  <circle cx="128" cy="128" r="90" fill="url(#coreGlow)" opacity="0.3"/>
+
+  <!-- Left Code Bracket '<' -->
+  <path d="M72 90 L38 128 L72 166" stroke="#22d3ee" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right Code Bracket '>' -->
+  <path d="M184 90 L218 128 L184 166" stroke="#22d3ee" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Medical Cross Horizontal -->
+  <rect x="74" y="116" width="108" height="24" rx="12" fill="url(#crossGrad)"/>
+
+  <!-- Medical Cross Vertical -->
+  <rect x="116" y="74" width="24" height="108" rx="12" fill="url(#crossGrad)"/>
+
+  <!-- Central Pulse Core -->
+  <circle cx="128" cy="128" r="14" fill="#ffffff" filter="drop-shadow(0 0 8px #22d3ee)"/>
+  <circle cx="128" cy="128" r="24" stroke="#67e8f9" stroke-width="3" stroke-dasharray="4 4" opacity="0.8"/>
+
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="coreGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 128) scale(90)">
+      <stop stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#0891b2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="crossGrad" x1="74" y1="74" x2="182" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+</svg>

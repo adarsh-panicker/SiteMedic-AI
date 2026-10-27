@@ -1,0 +1,64 @@
+/* Acme Corp Sample Stylesheet (Contains intentional defects) */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1a1a2e;
+  padding: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Defect: White text on white background (contrast violation) */
+.hero {
+  background-color: #fff;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+.features {
+  display: flex;
+  padding: 40px 20px;
+}
+
+.feature {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.newsletter {
+  background: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 300px;
+}
+
+footer {
+  background: #1a1a2e;
+  color: #999;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #999;
+}
