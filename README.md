@@ -128,18 +128,6 @@ Click **"Try Demo"** on the landing page or `/scan` to immediately trigger a zer
 
 ---
 
-## 🎬 3-Minute Hackathon Demo Script
-
-| Timestamp | Screen / Action | Narration & Key Points |
-| :--- | :--- | :--- |
-| **0:00 - 0:25** | Landing Page (`/`) | *"Welcome to SiteMedic AI, an autonomous website audit and repair agent built for the Nebius × NVIDIA Hackathon. Most tools just list errors. SiteMedic AI diagnoses them, generates minimal code fixes with NVIDIA Nemotron, and validates the fixes before you apply them."* |
-| **0:25 - 0:55** | Demo Scan (`/scan?demo=true`) | *"Clicking 'Try Demo' runs our deterministic scanner on a sample site without needing API keys. We find 11 real issues categorized by severity with a calculated Health Score of 67. Notice the evidence collected for missing alt text and missing SEO metadata."* |
-| **0:55 - 1:35** | Repair Lab (`/repair-lab`) | *"Open an issue in the AI Repair Lab. With our Nebius API key configured, we trigger NVIDIA Nemotron-3.5-Super. The model receives only relevant context, analyzes the root cause, and generates a minimal patch."* |
-| **1:35 - 2:15** | Agentic Validation Loop | *"SiteMedic AI executes our bounded workflow: Inspect → Diagnose → Plan → Patch → Validate. It validates the HTML and re-audits the patched code. If a test fails, the agent automatically revises up to 2 times."* |
-| **2:15 - 3:00** | Diff & Export | *"We review the unified diff side-by-side, inspect the verification plan and risks, and export the corrected file or unified patch with one click. SiteMedic AI turns hours of manual debugging into verified, instant repairs."* |
-
----
-
 ## 🛡️ Security Protections
 
 - **Server-Side Request Forgery (SSRF) Prevention:** Blocks all private/reserved IPv4 & IPv6 ranges (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`, `127.0.0.0/8`, `169.254.0.0/16`), cloud metadata services (`169.254.169.254`), and restricted ports (SSH, database, mail).
